@@ -7,6 +7,7 @@ namespace Sales
         public static void AddSales(this IServiceCollection serviceCollection)
         {
             serviceCollection.AddDbContext<SalesDbContext>();
+            serviceCollection.AddTransient<Events>();
         }
     }
 }

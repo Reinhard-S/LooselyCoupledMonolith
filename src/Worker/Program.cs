@@ -22,7 +22,12 @@ namespace Worker
                     services.AddCap(options =>
                     {
                         options.UseInMemoryStorage();
-                        options.UseRabbitMQ("localhost");
+                        // options.UseRabbitMQ("localhost");
+                        options.UseAzureServiceBus(config =>
+                        {
+                            config.ConnectionString = "Endpoint=sb://servida-dev-events.servicebus.windows.net/;SharedAccessKeyName=LooselyCoupledMonolithKey;SharedAccessKey=qMe+oZStvlmvUA9vrfhHXsCJGnAOjorumnuPtr/5x5M=";
+                            config.TopicPath = "LooselyCoupledMonolith";
+                        });
                     });
 
                 });

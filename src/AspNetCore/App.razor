@@ -1,0 +1,13 @@
+<!-- App.razor -->
+@using Microsoft.AspNetCore.Components.Routing
+@using AspNetCore.Shared
+<Router AppAssembly="@typeof(Program).Assembly">
+    <Found Context="routeData">
+        <RouteView RouteData="@routeData" DefaultLayout="@typeof(Layout)" />
+    </Found>
+    <NotFound>Cannot find anything on this page</NotFound>
+</Router>
+
+@code{
+    public static string Title { get => "Reiny's Loosely Coupled Monotlith"; }
+}

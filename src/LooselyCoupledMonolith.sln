@@ -1,27 +1,27 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sales", "Sales\Sales.csproj", "{018A96A1-C587-43C6-BB9C-12AB654F6CC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sales", "Sales\Sales.csproj", "{018A96A1-C587-43C6-BB9C-12AB654F6CC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sales.Contracts", "Sales.Contracts\Sales.Contracts.csproj", "{FBC583E2-8BA8-4DD2-B9D4-BC76D13C347D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sales.Contracts", "Sales.Contracts\Sales.Contracts.csproj", "{FBC583E2-8BA8-4DD2-B9D4-BC76D13C347D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sales.Tests", "Sales.Tests\Sales.Tests.csproj", "{FDCEB20D-64A6-426E-9E5B-9FB8AC88B975}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sales.Tests", "Sales.Tests\Sales.Tests.csproj", "{FDCEB20D-64A6-426E-9E5B-9FB8AC88B975}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shipping", "Shipping\Shipping.csproj", "{18E2D615-2585-48C5-82A5-93CC798C54B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shipping", "Shipping\Shipping.csproj", "{18E2D615-2585-48C5-82A5-93CC798C54B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shipping.Contracts", "Shipping.Contracts\Shipping.Contracts.csproj", "{BAA655B9-BE4B-40E5-9A19-D8BEDFBDA31E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shipping.Contracts", "Shipping.Contracts\Shipping.Contracts.csproj", "{BAA655B9-BE4B-40E5-9A19-D8BEDFBDA31E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shipping.Tests", "Shipping.Tests\Shipping.Tests.csproj", "{F61CB79C-4B4B-4D89-8047-C91C9EA7AEE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shipping.Tests", "Shipping.Tests\Shipping.Tests.csproj", "{F61CB79C-4B4B-4D89-8047-C91C9EA7AEE1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sales", "Sales", "{7D57F573-B99C-45B1-A5C3-5710F7E4083B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shipping", "Shipping", "{197792D6-E8EE-43E3-9330-6A15A518487E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Worker", "Worker\Worker.csproj", "{D1542A48-599D-46EA-A35D-24FE47649416}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Worker", "Worker\Worker.csproj", "{D1542A48-599D-46EA-A35D-24FE47649416}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore", "AspNetCore\AspNetCore.csproj", "{4986376E-4D3C-4751-99FE-176F61A0BAA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCore", "AspNetCore\AspNetCore.csproj", "{4986376E-4D3C-4751-99FE-176F61A0BAA2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,9 +31,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{018A96A1-C587-43C6-BB9C-12AB654F6CC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -133,6 +130,9 @@ Global
 		{4986376E-4D3C-4751-99FE-176F61A0BAA2}.Release|x86.ActiveCfg = Release|Any CPU
 		{4986376E-4D3C-4751-99FE-176F61A0BAA2}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{018A96A1-C587-43C6-BB9C-12AB654F6CC6} = {7D57F573-B99C-45B1-A5C3-5710F7E4083B}
 		{FBC583E2-8BA8-4DD2-B9D4-BC76D13C347D} = {7D57F573-B99C-45B1-A5C3-5710F7E4083B}
@@ -140,5 +140,8 @@ Global
 		{18E2D615-2585-48C5-82A5-93CC798C54B8} = {197792D6-E8EE-43E3-9330-6A15A518487E}
 		{BAA655B9-BE4B-40E5-9A19-D8BEDFBDA31E} = {197792D6-E8EE-43E3-9330-6A15A518487E}
 		{F61CB79C-4B4B-4D89-8047-C91C9EA7AEE1} = {197792D6-E8EE-43E3-9330-6A15A518487E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3F2D0A66-AA55-45A1-9B41-662CBE08DCE5}
 	EndGlobalSection
 EndGlobal

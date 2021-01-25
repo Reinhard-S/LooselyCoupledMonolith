@@ -1,0 +1,23 @@
+@page "/placeorder"
+@using System.Net.Http.Json;
+@using Sales
+@inject IHttpClientFactory ClientFactory
+
+<h1>Place Order</h1>
+
+<p>Use the below button to POST a new order request to the API.</p>
+
+<button @onclick="PlaceOrder">Click to Increase Count</button>
+
+@code {
+
+
+    private async void PlaceOrder()
+    {
+        using (var client = ClientFactory.CreateClient("ServerAPI"))
+        {
+            var order = new Sales.Order { OrderId = Guid.NewGuid() };
+            var response = await client.PostAsJsonAsync("/sales", order);
+        }
+}
+}
